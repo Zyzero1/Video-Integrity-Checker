@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0; /* Reset default body margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for inner content */
+    max-width: 450px; /* Maximum width of the container */
+    width: 100%; /* Take full width of the parent */
+    text-align: center; /* Center align inner content */
+    color: #fff; /* Text color */
+}
+button:hover {
+    background-color: #0056b3;
+}
+#hashResult, #integrityResult {
+    margin-top: 20px;
+}

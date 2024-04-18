@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Integrity Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Integrity Checker</h1>
+        <form id="hashForm" onsubmit="return false;">
+            <label for="videoFile">Choose a video file:</label>
+            <input type="file" id="videoFile" name="videoFile" accept=".mp4" required>
+            <button type="button" onclick="calculateHash()">Calculate Hash</button>
+        </form>
+        <div id="hashResult"></div>
+
+        <h2>Check Integrity</h2>
+        <form id="integrityForm">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="hash">Hash Value:</label>
+            <input type="text" id="hash" name="hash" required>
+            <button type="button" onclick="checkIntegrity()">Check Integrity</button>
+        </form>
+        <div id="integrityResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
